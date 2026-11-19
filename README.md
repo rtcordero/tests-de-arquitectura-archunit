@@ -1,6 +1,6 @@
 # Tests de arquitectura con ArchUnit
 
-Código del artículo [Tests de arquitectura con ArchUnit: que la IA respete capas](https://rubentejera.com/tests-de-arquitectura/).
+Código del artículo [ArchUnit: tests de arquitectura para que la IA respete capas](https://rubentejera.com/tests-de-arquitectura/), que se publica el 12 de enero de 2027.
 
 Una API de pedidos pequeña, con tres capas: dominio, aplicación e infraestructura. `ArquitecturaTest` comprueba con [ArchUnit](https://www.archunit.org/) dos reglas sobre las clases compiladas:
 
