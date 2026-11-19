@@ -5,7 +5,7 @@ Código del artículo [Tests de arquitectura con ArchUnit: que la IA respete cap
 Una API de pedidos pequeña, con tres capas: dominio, aplicación e infraestructura. `ArquitecturaTest` comprueba con [ArchUnit](https://www.archunit.org/) dos reglas sobre las clases compiladas:
 
 - **Cada capa solo usa las que le tocan**, y toda clase está en alguna capa (`ensureAllClassesAreContainedInArchitecture()`).
-- **El dominio solo usa Java estándar**: ni bases de datos, ni red, ni SDK de terceros.
+- **El dominio no depende de nada de fuera**: solo de su código y de `java.lang`, `java.util`, `java.math` y `java.time`; ni bases de datos (aunque `java.sql` sea Java estándar), ni red, ni SDK de terceros.
 
 En `atajos/` están los tres atajos que el artículo usa como ejemplo de lo que un agente de IA puede hacer para añadir un descuento:
 

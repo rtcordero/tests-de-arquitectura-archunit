@@ -29,7 +29,7 @@ class ArquitecturaTest {
   }
 
   @Test
-  void el_dominio_solo_usa_java_estandar() {
+  void el_dominio_no_depende_de_nada_de_fuera() {
     classes().that().resideInAPackage("..dominio..")
         .should().onlyDependOnClassesThat()
         .resideInAnyPackage("..dominio..", "java.lang..", "java.util..", "java.math..", "java.time..")
